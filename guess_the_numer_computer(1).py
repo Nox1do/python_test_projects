@@ -19,7 +19,7 @@ def guess_pc(x):
             guess = limite_inferior #tambien prodria ser el limite limite_superior
             
         #obtener respuesta del usuario
-        respuesta = input(f"Mmm..pienso que es el numero.. {guess}. Si es alto, ingresa (A). Si es bajo, ingresa (B). Si es correcto, ingresa (C)")
+        respuesta = input(f"Mmm..pienso que es el numero.. {guess}. Si es alto, ingresa (A). Si es bajo, ingresa (B). Si es correcto, ingresa (C): ")
         respuesta.lower()
         
         if respuesta == "a":
@@ -30,7 +30,7 @@ def guess_pc(x):
     print(f"LO SABIA!, Es el {x}!!!!!!! Soy mejor que ALEXA!. SIIII..!")
              
              #intervalo inicial : [1,10]
-             #Guess : 6
-             #Respuesta: "a"
-             #Intervarlo : [1,5]
+             #Guess : x
+             #Respuesta: "a,b,c"
+             #Intervarlo despues de respuesta : [1,5]
 guess_pc(10)
